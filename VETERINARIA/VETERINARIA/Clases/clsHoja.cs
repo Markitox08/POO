@@ -19,7 +19,7 @@ namespace VETERINARIA.Clases
         public clsHoja()
         {
             this.identificador = 0;
-            sintomas = "";
+            this.sintomas = "";
             this.diagnostico = "";
             this.tratamiento = "";
             this.idMascota = 0;
@@ -37,18 +37,51 @@ namespace VETERINARIA.Clases
 
         #region Metodos
 
-        public int identificador
+        public int Identificador
 
         {
             set { identificador = value; }
             get { return identificador; }
         }
 
-        public string sintomas
+        public string Sintomas
+        {
+            set { sintomas = value; }
+            get { return sintomas; }
+        }
+
+        public string Diagnostico
+        {
+            set { diagnostico = value; }
+            get { return diagnostico; }
+        }
+        public string Tratamiento
+        {
+            set { tratamiento = value; }
+            get { return tratamiento; }
+        }
+
+        public int IdMascota
+
+        {
+            set { idMascota = value; }
+            get { return idMascota; }
+        }
+        #endregion
+
+        #region Funciones y Procedimientos
+
+        public String imprimirDatos()
+        {
+            string datos = "";
+            datos = " Sintomas: " + this.sintomas + "\n" +
+                    " Diagnostico: " + this.diagnostico + "\n" +
+                    " Tratamiento: " + this.tratamiento + "\n" +
+                    " ID Mascota: " + this.idMascota;
+            return datos;
+        }
 
         #endregion
 
     }
-
-
 }

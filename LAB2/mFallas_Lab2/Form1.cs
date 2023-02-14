@@ -1,3 +1,6 @@
+using Microsoft.VisualBasic;
+using System.Reflection;
+
 namespace mFallas_Lab2
 {
     public partial class Form1 : Form
@@ -39,9 +42,10 @@ namespace mFallas_Lab2
 
         private void txtContrasena(object sender, KeyPressEventArgs e)
         {
+            
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >=58 && e.KeyChar <= 64) || (e.KeyChar >=91 && e.KeyChar <=96) || (e.KeyChar >= 132 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo Numeros o letras","", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Solo Numeros o letras","Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
             }
