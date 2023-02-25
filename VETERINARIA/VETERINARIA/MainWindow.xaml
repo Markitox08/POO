@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VETERINARIA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="700" Width="600">
+
+    <Grid x:Name="txtUsuario">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEFE6BC" Offset="1"/>
+                <GradientStop Color="#FF4DBFB2" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblClinicaVeterinaria" Content="Clinica Veterinaria" HorizontalAlignment="Center" Margin="0,48,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="36" Height="71"/>
+        <Label x:Name="lblHuellitasSOS" Content="Huellitas SOS" HorizontalAlignment="Center" Margin="0,107,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="36" Height="71"/>
+        <PasswordBox x:Name="txtContrasena" HorizontalAlignment="Left" Margin="233,342,0,0" VerticalAlignment="Top" Width="232" Height="55" Background="#FFEFEECA"/>
+        <Label x:Name="lblContrasena" Content="Contrasena" HorizontalAlignment="Left" Margin="81,342,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="20" Height="71"/>
+        <Label x:Name="lblUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="115,286,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="20" Height="71"/>
+        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Center" Margin="0,564,0,0" VerticalAlignment="Top" Height="49" Width="184" FontWeight="Bold" FontStyle="Italic" FontSize="18" Click="btnIniciar_Click"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="349,613,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="233,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Height="57" Background="#FFEEF1CC" TextChanged="TextBox_TextChanged"/>
+
     </Grid>
 </Window>

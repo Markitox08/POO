@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VETERINARIA.Clases
 {
-    internal class clsPropietario
+    public class clsPropietario
     {
 
         #region

@@ -16,5 +16,20 @@ namespace mFallas_Lab2.Formularios.Clientes
         {
             InitializeComponent();
         }
+
+        private void MenuClientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuClientes_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

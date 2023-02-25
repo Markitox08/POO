@@ -36,5 +36,15 @@ namespace mFallas_Lab2.Formularios.Doctores
         {
 
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

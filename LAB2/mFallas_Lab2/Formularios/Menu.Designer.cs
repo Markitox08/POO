@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -41,7 +44,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label2.Location = new System.Drawing.Point(143, 56);
+            this.label2.Location = new System.Drawing.Point(243, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 37);
             this.label2.TabIndex = 10;
@@ -54,7 +57,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(174, 160);
+            this.button1.Location = new System.Drawing.Point(98, 160);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 50);
             this.button1.TabIndex = 11;
@@ -67,7 +70,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Location = new System.Drawing.Point(178, 265);
+            this.button2.Location = new System.Drawing.Point(442, 160);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 50);
             this.button2.TabIndex = 12;
@@ -78,7 +81,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Location = new System.Drawing.Point(178, 373);
+            this.button3.Location = new System.Drawing.Point(442, 281);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(169, 50);
             this.button3.TabIndex = 13;
@@ -89,19 +92,37 @@
             // 
             this.button4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.Location = new System.Drawing.Point(178, 484);
+            this.button4.Location = new System.Drawing.Point(98, 281);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(169, 50);
             this.button4.TabIndex = 14;
             this.button4.Text = "Farmacias";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button5.Location = new System.Drawing.Point(98, 403);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(169, 50);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Alergias";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(524, 581);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(724, 851);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -122,5 +143,7 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private ContextMenuStrip contextMenuStrip1;
+        private Button button5;
     }
 }

@@ -57,6 +57,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Utilidades\Procedimientos.cs" />
+    <Compile Include="Utilidades\variables.cs" />
+    <Page Include="Formularios\Hoja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Formularios\Mascotas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Formularios\MenuPrincipal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Formularios\Propietario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,11 +86,18 @@
     <Compile Include="Clases\clsHoja.cs" />
     <Compile Include="Clases\clsMascota.cs" />
     <Compile Include="Clases\clsPropietario.cs" />
-    <Compile Include="Formularios\clsMascota.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Clases\clsUsuario.cs" />
+    <Compile Include="Formularios\Hoja.xaml.cs">
+      <DependentUpon>Hoja.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\clsMascota.Designer.cs">
-      <DependentUpon>clsMascota.cs</DependentUpon>
+    <Compile Include="Formularios\Mascotas.xaml.cs">
+      <DependentUpon>Mascotas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MenuPrincipal.xaml.cs">
+      <DependentUpon>MenuPrincipal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Propietario.xaml.cs">
+      <DependentUpon>Propietario.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -108,7 +133,6 @@
   <ItemGroup>
     <Folder Include="Interfaz\" />
     <Folder Include="Recursos\" />
-    <Folder Include="Utilidades\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

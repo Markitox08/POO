@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VETERINARIA.Clases
 {
-    internal class clsHoja
+    public class clsHoja
     {
         #region Atributos
         private int identificador;

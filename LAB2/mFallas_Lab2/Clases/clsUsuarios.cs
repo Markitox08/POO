@@ -6,36 +6,42 @@ using System.Threading.Tasks;
 
 namespace mFallas_Lab2.Clases
 {
-    internal class clsUsuarios
+    public class clsUsuarios
     {
         #region Atributos
-        private int identificador;
-        private string contrasena;
+        private int idUsuario;
+        private string usuario,contrasena;
         #endregion
 
-
-        #region
+        #region constructor
         public clsUsuarios()
         {
-            this.identificador = 0;
+            this.idUsuario = 0;
             this.contrasena = "";
+            this.usuario = "";
         }
-        public clsUsuarios( int identificador, string contrasena)
+        public clsUsuarios( int identificador, string contrasena, string usuario)
         {
-            this.identificador = identificador;
+            this.idUsuario = identificador;
             this.contrasena = contrasena;
+            this.usuario = usuario;
         }
         #endregion
 
         #region Metodos
 
-        public int Identificador
+        public int IdUsuarios
 
         {
-            set { identificador = value; }
-            get { return identificador; }
+            set { idUsuario = value; }
+            get { return idUsuario; }
         }
 
+        public string Usuario
+        {
+            set { usuario = value; }
+            get { return usuario; }
+        }
         public string Contrasena
         {
             set { contrasena = value; }
@@ -48,7 +54,8 @@ namespace mFallas_Lab2.Clases
         public String imprimirDatos()
         {
             string datos = "";
-            datos = " Identificador: " + this.identificador + "\n" +
+            datos = " IdUsuarios: " + this.idUsuario + "\n" +
+                    " Usuario: " + this.usuario + "\n" +
                     " Contrasena: " + this.contrasena + "\n";
 
             return datos;
