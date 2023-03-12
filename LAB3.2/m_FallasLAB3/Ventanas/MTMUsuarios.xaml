@@ -1,0 +1,51 @@
+﻿<Window x:Class="m_FallasLAB3.Ventanas.MTMUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:m_FallasLAB3.Ventanas"
+        mc:Ignorable="d"
+        Title="MTMUsuarios" Height="800" Width="600
+        ">
+    <Grid>
+        <Button x:Name="btnAgregarUsuario" Content="Agragar" HorizontalAlignment="Left" Margin="404,189,0,0" VerticalAlignment="Top" Height="35" Width="103" Click="btnAgregarUsuario_Click"/>
+        <Label x:Name="lblUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="106,172,0,0" VerticalAlignment="Top" Height="27" Width="139"/>
+        <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" Margin="106,247,0,0" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Margin="106,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="txtClave" HorizontalAlignment="Left" Margin="106,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Nombre Completo" HorizontalAlignment="Left" Margin="106,332,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Apellidos" HorizontalAlignment="Left" Margin="106,413,0,0" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="106,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="txtApellidos" HorizontalAlignment="Left" Margin="106,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="405,266,0,0" VerticalAlignment="Top" Height="35" Width="102" Click="btnActualizarUsuario_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF18A00"/>
+                    <GradientStop Color="#FFF93549" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblIdentificacion" Content="Identificacion" HorizontalAlignment="Left" Margin="106,487,0,0" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="txtIdentificacion" HorizontalAlignment="Left" Margin="106,518,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="405,348,0,0" VerticalAlignment="Top" Height="35" Width="103" Click="btnGuardarUsuario_Click"/>
+        <Label Content="Buscar Usuario a Actualizar:" HorizontalAlignment="Left" Margin="106,68,0,0" VerticalAlignment="Top" Height="30" Width="169"/>
+        <ComboBox x:Name="cmbConsultarUsuarios" HorizontalAlignment="Left" Margin="106,100,0,0" VerticalAlignment="Top" Width="120" ContextMenuClosing="cmbConsultarUsuarios_Click" SelectionChanged="cmbConsultarUsuarios_SelecChanged"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="405,496,0,0" VerticalAlignment="Top" Height="35" Width="103" Click="btnEliminarUsuario_Click"/>
+        <CheckBox x:Name="ckEstado" Content="Estado Activo" HorizontalAlignment="Left" Margin="111,582,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblRegistradoPor" Content="Registrado Por" HorizontalAlignment="Left" Margin="57,648,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txtRegistradoPor" HorizontalAlignment="Left" Margin="151,652,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFechaRegistrado" HorizontalAlignment="Left" Margin="151,679,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtActualizadoPor" HorizontalAlignment="Left" Margin="151,707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFechaActualizado" HorizontalAlignment="Left" Margin="151,736,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Fecha de Registro" HorizontalAlignment="Left" Margin="43,674,0,0" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Actualizado Por" HorizontalAlignment="Left" Margin="52,705,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Fecha de Actualizado" HorizontalAlignment="Left" Margin="28,732,0,0" VerticalAlignment="Top" Width="123"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="405,433,0,0" VerticalAlignment="Top" Width="103" Height="35" Click="btnCancelarUsuario_Click"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="512,189,0,0" VerticalAlignment="Top" Width="42" Source="/Ventanas/add.png"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="512,266,0,0" VerticalAlignment="Top" Width="35" Source="/Ventanas/share.png"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="513,348,0,0" VerticalAlignment="Top" Width="34" Source="/Ventanas/repeat.png"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="513,496,0,0" VerticalAlignment="Top" Width="34" Source="/Ventanas/error.png" RenderTransformOrigin="0.52,0.525"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="513,434,0,0" VerticalAlignment="Top" Width="34" Source="/Ventanas/prohibido.png"/>
+
+    </Grid>
+</Window>

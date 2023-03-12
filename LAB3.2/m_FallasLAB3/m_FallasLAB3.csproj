@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{181A48A5-256A-4EBA-B876-5046BF1BB272}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>m_FallasLAB3</RootNamespace>
+    <AssemblyName>m_FallasLAB3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BD\Conn.cs" />
+    <Compile Include="BD\ConnSQL.cs" />
+    <Compile Include="Datos\dtoUsuario.cs" />
+    <Compile Include="Utilidades\escribirLog.cs" />
+    <Compile Include="Utilidades\util.cs" />
+    <Compile Include="Utilidades\variablesGloables.cs" />
+    <Compile Include="Ventanas\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\MTMUsuarios.xaml.cs">
+      <DependentUpon>MTMUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\clsAlergias.cs" />
+    <Compile Include="Clases\clsClientes.cs" />
+    <Compile Include="Clases\clsDetalleFactura.cs" />
+    <Compile Include="Clases\clsDoctor.cs" />
+    <Compile Include="Clases\clsFactura.cs" />
+    <Compile Include="Clases\clsFarmacia.cs" />
+    <Compile Include="Clases\clsHojaClinica.cs" />
+    <Compile Include="Clases\clsReceta.cs" />
+    <Compile Include="Clases\clsUsuario.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Ventanas\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ventanas\MTMUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IconIma\add.png" />
+    <Resource Include="IconIma\calculator.png" />
+    <Resource Include="IconIma\error.png" />
+    <Resource Include="IconIma\folder.png" />
+    <Resource Include="IconIma\home.png" />
+    <Resource Include="IconIma\OIP.jpg" />
+    <Resource Include="IconIma\OIP2.jpg" />
+    <Resource Include="IconIma\radar.png" />
+    <Resource Include="IconIma\repeat.png" />
+    <Resource Include="IconIma\share.png" />
+    <Resource Include="IconIma\user %284%29.png" />
+    <Resource Include="IconIma\user.png" />
+    <Resource Include="IconIma\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IconIma\llave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="llave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="OIP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\user %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\radar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\OIP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IconIma\prohibido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\prohibido.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

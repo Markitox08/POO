@@ -1,0 +1,84 @@
+﻿<Window x:Name="winMune" x:Class="m_FallasLAB3.Ventanas.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:m_FallasLAB3.Ventanas"
+        mc:Ignorable="d"
+        Title="Menu" Height="724" Width="670">
+    <Grid x:Name="grdMenu" Margin="0,0,39,0">
+        <Button x:Name="btnUsuario" Content="Mantenimiento de Usuarios" HorizontalAlignment="Left" Margin="119,128,0,0" VerticalAlignment="Top" Height="44" Width="145" Click="btnUsuario_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF76BC21" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnDoctor" Content="Doctres" HorizontalAlignment="Left" Margin="119,222,0,0" VerticalAlignment="Top" Height="44" Width="145">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF0099A8" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFactura" Content="Factura" HorizontalAlignment="Left" Margin="119,327,0,0" VerticalAlignment="Top" Height="44" Width="145">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF76BC21" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFarmacia" Content="Farmacia" HorizontalAlignment="Left" Margin="119,426,0,0" VerticalAlignment="Top" Height="44" Width="145">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0099A8" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnClientes" Content="Clientes" HorizontalAlignment="Left" Margin="398,128,0,0" VerticalAlignment="Top" Height="44" Width="144">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0099A8"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnAlergias" Content="Alergias" HorizontalAlignment="Left" Margin="398,222,0,0" VerticalAlignment="Top" Height="44" Width="144">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF76BC21" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnHojaClinica" Content="HojaClinica" HorizontalAlignment="Left" Margin="398,0,0,0" VerticalAlignment="Center" Height="44" Width="144">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0099A8"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnRecetas" Content="Recetas" HorizontalAlignment="Left" Margin="397,426,0,0" VerticalAlignment="Top" Height="44" Width="145">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF76BC21" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="40" Margin="342,224,0,0" VerticalAlignment="Top" Width="43" Source="/Ventanas/radar.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="65,222,0,0" VerticalAlignment="Top" Width="43" Source="/Ventanas/user.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="342,128,0,0" VerticalAlignment="Top" Width="43" Source="/Ventanas/user (4).png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="65,128,0,0" VerticalAlignment="Top" Width="43" Source="/Ventanas/users.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="66,329,0,0" VerticalAlignment="Top" Width="43" Source="/Ventanas/calculator.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="65,426,0,0" VerticalAlignment="Top" Width="43" Source="/Ventanas/home.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="342,332,0,0" VerticalAlignment="Top" Width="43" Source="/Ventanas/folder.png"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="342,426,0,0" VerticalAlignment="Top" Width="50" Source="/Ventanas/OIP2.jpg"/>
+
+    </Grid>
+</Window>
